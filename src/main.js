@@ -13,6 +13,8 @@ import {
   transitions,
 } from 'vuetify';
 import Vue from 'vue';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 import App from './App';
 import router from './router';
 
@@ -42,6 +44,17 @@ Vue.use(Vuetify, {
 });
 
 Vue.config.productionTip = false;
+
+// Initialize Firebase
+const config = {
+  apiKey: 'AIzaSyD43vlf0T_KHIjjtNjeJP5Z1QtSbpkcVQU',
+  authDomain: 'meal-api.firebaseapp.com',
+  databaseURL: 'https://meal-api.firebaseio.com',
+  projectId: 'meal-api',
+  storageBucket: '',
+  messagingSenderId: '244025235453',
+};
+firebase.initializeApp(config);
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "api": "meal-api",
+    "default": "meal-api"
+  }
+}
